@@ -1,17 +1,19 @@
 # Simple CSS Grid
 A simple Flexbox based grid system for CSS.
 
-## Install
+## Instalación en Angular usando css
 ### npm
-`npm install simple-css-grid`  
+`npm install simple-css-grid --s`  
 
-Then import into your sass using 
-`@import '~simple-css-grid/scss/simple-grid';`
+Agregaremos el paquete en las importaciones de Angular.json de la siguiente manera:
+    `"styles": 
+    [
+    "./node_modules/simple-css-grid/css/simple-grid.css",
+     "src/styles.css"
+    ],`
 
-## Usage
-Documentation coming soon. In the meantime, this works pretty similarly to Bootstrap 4's grid system. 
-E.g.:
-```html
+## Uso en componentes. Considerando que hemos instalado Simple CSS en toda la app podremos usar en cualquier componente.
+HTML:
 <div class="container">
     <div class="row">
         <div class="col-6"> I'm a half width sized column </div>
